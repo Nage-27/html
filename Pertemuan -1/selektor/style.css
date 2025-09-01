@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+p {
+    color: blue;
+}
+.pink {
+    color: white;
+    background: palevioletred;
+    padding: 5px;
+}
+/* .paragraf {
+    color: black;
+    font-weight: bold;
+    
+} */
+ .bg-teal {
+    background: teal;
+ }
+ .textwhite {
+    color: white;
+ }  
+ #header {
+    background: teal;
+    color: whitesmoke;
+    height: 100px;
+    padding: 50px;
+ }
+ .link {
+    background: blueviolet;
+    color: whitesmoke;
+    padding: 5px;
+    text-decoration: none;
+ }
+ #menu {
+    background: lightcoral;
+    color: white;
+    height: 600px;
+    padding: 100px;
+    margin-top: 700px;
+ }
+ .backtotop {
+    background: aquamarine;
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+ }
+ #top {
+    background: forestgreen;
+    color: black;
+    height: 600px;
+    padding: 100px;
+    margin-top: 700px;
+ }
+ input [type="text"] {
+    color: black;
+    background: none;
+    padding: 10px;
+    border: 1px solid black;
+    width: 300px;
+ }
+ a:hover {
+    color: green;
+    background: black;
+    padding: 5px;
+    text-decoration: none;
+ }
+ p::first-line {
+    color: magenta;
+ }
+ p {
+    width: 500px;
+ }
