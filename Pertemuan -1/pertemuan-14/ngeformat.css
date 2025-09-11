@@ -1,0 +1,40 @@
+.left-to-right {
+    direction: ltr;
+    text-align: left;
+    font-size: 24px;
+    margin: 20px;
+}
+
+.right-to-left {
+    direction: rtl;
+    text-align: justify;
+    font-size: 24px;
+    margin: 20px;
+}
+
+header h1 {
+    
+}
+
+body {
+    
+    direction: rtl;
+}
+
+.upperline {
+    text-decoration: underline;
+    border-top: 2px solid black;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.lowerline {
+    text-decoration: overline
+    border-top:2px solid black;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.deleted {
+    text-decoration: line-through;
+}
