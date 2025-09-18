@@ -1,0 +1,27 @@
+h1 {
+    font-size: smaller;
+}
+
+.font-besar {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.font-kecil {
+    font-size: small;
+    font-weight: lighter;
+}
+
+.italic {
+    font-style: italic;
+    font-size: medium;
+    font-weight: bolder;
+}
+
+.oblique {
+    font-style: oblique;
+    font-size: x-large;
+    font-weight: 800;
+    font-family: cursive;
+}
+

@@ -1,0 +1,13 @@
+header {
+    width: 600px;
+    background-color: aqua;
+    color: black;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+article {
+    width: 600px;
+    background-color: bisque;
+    padding: 16px;
+}
