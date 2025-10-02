@@ -14,8 +14,8 @@
 
         .badge {
             position: absolute;
-            top: 140px;
-            right: 8;
+            top: 150px;
+            right: 250px;
             background-color: red;
             font-weight: bold;
         }
@@ -24,6 +24,57 @@
             position: relative;
             top: 4px;
         }
+        .card img {
+            margin: 24px auto;
+            padding: 16px;
+            display: block;
+            width: 70%;
+            height: auto;
+            position: relative;
+            object-fit: cover;
+            background-color: darkslategray;
+            border-color: darkslategray;
+            box-sizing: border-box;
+            border-radius: 20px;
+        }
+
+        .box {
+        width: 150px;
+         height: 150px;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        line-height: 150px;
+        position: relative;
+        }
+        .box-a {
+            background: darkslategray;
+            z-index: 1;
+            left: 32px;
+            top: 50px;
+            left: 50px;
+        }
+        .box-b {
+            background: darkcyan;
+            z-index: 2;
+            left: 72px;
+            top: 80px;
+            left: 80px;
+        }
+
+        .box-a,
+        .box-b {
+            width: 150px; 
+            height: 150px; 
+            position: absolute;
+            font-size: 24px;
+            text-align: center;
+            line-height: 150px;
+            color: white;
+            border-radius: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+       
     </style>
 </head>
 <body>
@@ -33,14 +84,20 @@
   </header>
 
 
-        <h2 id="card">Motor mx king</h2>
+        <h2 id="card">Summit Prau</h2>
         <div class="card">
             <div class="media">
-                <img src="mxking.jpeg" alt="placeholder mtr">
-                <p class="badge">ALL NEW</p>
-                <p class="tag">Yamaha</p>
+                <img src="gn-prau.jpg" alt="placeholder mtr">
+                <p class="badge">MDPL</p>
+                <p class="tag">Pendakian</p>
                 <p>paragraf...(konten)</p>
             </div>
         </div>
+
+        <div class="box">
+            <div class="box-a">Box A</div>
+            <div class="box-b">Box B</div>
+        </div>
+        
 </body>
 </html>
