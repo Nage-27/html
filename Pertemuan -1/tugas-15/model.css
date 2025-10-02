@@ -1,0 +1,33 @@
+.kontainer {
+    max-width: 800px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.kartu {
+    box-sizing: border-box;
+    width: 320px;
+    padding: 10px;
+    border: 5px;
+    border-radius: 5px;
+    margin: 10px;
+    overflow: hidden;
+}
+.kartu-2 {
+    box-sizing: border-box;
+    width: 320px;
+    padding: 10px;
+    border: 5px;
+    border-radius: 5px;
+    margin: 10px;
+    overflow: hidden;
+    tr
+}
+.feedback {
+    
+}
+
+.kartu:hover {
+    transform: translateY: ;;
+}

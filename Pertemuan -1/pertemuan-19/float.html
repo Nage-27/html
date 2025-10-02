@@ -1,0 +1,92 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>float</title>
+        <style>
+            /* .clearfix::after {
+                content: "";
+                clear: both;
+                display: table;
+            } */
+
+            ul.navigation {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                overflow: hidden;
+                background-color: antiquewhite;
+            }
+
+            ul.navigation li {
+                float: left;
+            }
+
+            ul.navigation li a {
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            ul.navigation li a:hover {
+                background-color: black;
+                color: white;
+                animation-delay: 0.5ms;
+            }
+
+            .container {
+                width: 100%;
+            }
+
+            .sidebar {
+                float: left;
+                width: 30%;
+                background-color: blanchedalmond;
+
+            }
+
+            .content {
+                float: right;
+                width: 70%;
+                background-color: #e0e0e0;
+            }
+
+            .clearfix::after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/5b34c224-2ea9-46c7-8d4d-0c127bac8881_menu-item-image_1736326989176.jpg?auto=format" alt="kopi kenangan" style="float: left; width: 150px;">
+        <p style="margin-left: 160px;">Kopi Dari Mantan</p>
+        <div style="clear: left; width: 150px; height: 150px; background: aqua;"></div>
+        <div class="Clearfix"></div>
+        <div style="float: left;">elemen 1</div>
+        <div style="float: right;">elemen 2</div> -->
+
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="Container">
+            <div class="sidebar">Sidebar</div>
+            <div class="content">Content</div>
+        </div>
+
+        <div class="container clearfix">
+            <div class="sidebar" style="float: left; width: 25%; background: white; padding: 10px; box-sizing: border-box;">Sidebar Jg</div>
+        </div>
+        <div class="content" style="margin-left: 25%; background: lightgray; padding: 10px; box-sizing: border-box;">
+           konten utm</div>
+        </div>
+
+
+    </body>
+    </html>
