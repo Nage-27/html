@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar HTML Lengkap</title>
+</head>
+<body>
+
+  <!-- ================== HEADER ================== -->
+  <header>
+    <h1>Belajar HTML Dasar</h1>
+    <p>Halaman ini berisi contoh-contoh elemen dasar HTML.</p>
+  </header>
+
+  <!-- ================== NAVIGASI ================== -->
+  <nav>
+    <a href="#formatting">Formatting</a> |
+    <a href="#list">List</a> |
+    <a href="#tabel">Tabel</a> |
+    <a href="#form">Form</a>
+  </nav>
+  <hr>
+
+  <!-- ================== KONTEN UTAMA ================== -->
+  <main>
+
+    <!-- ========== FORMATTING ========== -->
+    <section id="formatting">
+      <h2>1. Formatting Teks</h2>
+      <p>Contoh <b>teks tebal</b>, <i>teks miring</i>, <u>teks bergaris bawah</u>, 
+      <mark>highlight</mark>, <small>teks kecil</small>, <del>teks dicoret</del>.</p>
+    </section>
+
+    <!-- ========== LIST ========== -->
+    <section id="list">
+      <h2>2. List</h2>
+      <p><b>Unordered List:</b></p>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+
+      <p><b>Ordered List:</b></p>
+      <ol>
+        <li>Belajar Tag</li>
+        <li>Belajar Struktur</li>
+        <li>Belajar Elemen</li>
+      </ol>
+
+      <p><b>Deskripsi List:</b></p>
+      <dl>
+        <dt>HTML</dt>
+        <dd>Bahasa markup untuk membuat halaman web</dd>
+        <dt>CSS</dt>
+        <dd>Bahasa untuk mendesain tampilan web</dd>
+      </dl>
+    </section>
+
+    <!-- ========== TABEL ========== -->
+    <section id="tabel">
+      <h2>3. Tabel</h2>
+      <table border="1" cellpadding="8" cellspacing="0">
+        <tr>
+          <th>Nama</th>
+          <th>Kelas</th>
+          <th>Nilai</th>
+        </tr>
+        <tr>
+          <td>Budi</td>
+          <td>XI RPL</td>
+          <td>85</td>
+        </tr>
+        <tr>
+          <td>Sinta</td>
+          <td>XI TKJ</td>
+          <td>90</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- ========== FORM ========== -->
+    <section id="form">
+      <h2>4. Form</h2>
+      <form>
+        <!-- Input teks -->
+        <label>Nama:</label>
+        <input type="text" name="nama"> <br><br>
+
+        <!-- Input email -->
+        <label>Email:</label>
+        <input type="email" name="email"> <br><br>
+
+        <!-- Input password -->
+        <label>Password:</label>
+        <input type="password" name="password"> <br><br>
+
+        <!-- Radio button -->
+        <label>Jenis Kelamin:</label>
+        <input type="radio" name="gender" value="L"> Laki-laki
+        <input type="radio" name="gender" value="P"> Perempuan <br><br>
+
+        <!-- Checkbox -->
+        <label>Hobi:</label>
+        <input type="checkbox" name="hobi" value="Membaca"> Membaca
+        <input type="checkbox" name="hobi" value="Olahraga"> Olahraga
+        <input type="checkbox" name="hobi" value="Gaming"> Gaming <br><br>
+
+        <!-- Select -->
+        <label>Kelas:</label>
+        <select name="kelas">
+          <option value="XI RPL">XI RPL</option>
+          <option value="XI TKJ">XI TKJ</option>
+          <option value="XI MM">XI MM</option>
+        </select><br><br>
+
+        <!-- Textarea -->
+        <label>Pesan:</label><br>
+        <textarea rows="4" cols="40"></textarea><br><br>
+
+        <!-- Tombol -->
+        <input type="submit" value="Kirim">
+        <input type="reset" value="Reset">
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ================== FOOTER ================== -->
+  <footer>
+    <hr>
+    <p>&copy; 2025 Belajar HTML. Semua Hak Dilindungi.</p>
+  </footer>
+
+</body>
+</html>
