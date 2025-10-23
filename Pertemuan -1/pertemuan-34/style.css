@@ -1,0 +1,31 @@
+nav {
+    background: #FE793D;
+    color: aliceblue;
+    padding: 20px;
+}
+
+nav#with-flex {
+    display: flex;
+}
+
+nav#with-flex div {
+    margin-right: 20px;
+}
+
+nav#with-flex div:last-child {
+    margin-left: auto;
+}
+
+nav#withGrid {
+    background: #FE793D;
+    color: aliceblue;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+nav#withGrid div {}
+
+nav#withGrid {
+    grid-column: 10;
+}

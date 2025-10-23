@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 40px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 50px;
+        color: #666;
+        margin-bottom: 40px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .box {
+         background-color: #fff;
+        width: 300px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        text-align: left;
+        overflow: hidden;
+        box-shadow: transparent;
+    }
+
+    h2 {
+        text-align: center;
+        color: white;
+        font-size: 22px;
+        margin: 0;
+        padding: 15px;
+    }
+
+    .box h2 {
+        color: white;
+        font-size: 22px;
+        margin: 0;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .ordered h2 {
+        background-color: #e74c3c;
+    }
+
+    .unordered h2 {
+        background-color: #f1c40f;
+    }
+
+    .description h2 {
+        background-color: #3498db;
+    }
+
+    .konten {
+        padding: 15px 25px;
+    }
+
+    ol {
+        list-style-position: inside;
+        padding-left: 0;
+    }
+
+    ul {
+        list-style-position: inside;
+        padding-left: 0;
+    }
+
+    ol li , ul li {
+        margin-bottom: 8px;
+        padding: 5px 10px;
+        border-radius: 4px;
+    }
+
+    /* List yg deskripsi */
+
+    dl {
+        margin: 0;
+    }
+
+    dt {
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-size: 18px;
+        color: #e74c3c;
+    }
+    </style>
+</head>
+<body>
+    <h1>List Di HTML</h1>
+
+    <div class="container">
+
+        <div class="box ordered">
+            <h2>Ordered List</h2>
+            <div class="konten">
+                <ol>
+                    <li>Information Gathering</li>
+                    <li style="background-color: #f4f4f4;">Planning</li>
+                    <li>Design</li>
+                    <li style="background-color: #f4f4f4;">Development</li>
+                    <li>Testing & Deployment</li>
+                    <li style="background-color: #f4f4f4;">Maintenance</li>
+                </ol>
+        </div>
+    </div>
+
+    <div class="box unordered">
+        <h2>Unordered List</h2>
+        <div class="konten">
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+            <ul style="background-color: #f4f4f4;">
+                <li>SQL</li>
+                <li>PHP</li>
+            </ul>
+                <li>JavaScript</li>
+                <li>Python</li>
+            </ul>
+            </div>
+    </div>
+
+    <div class="box description">
+        <h2>Description List</h2>
+        <div class="konten">
+            <dl>
+                <dt>HTML</dt>
+                <dd>HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page.</dd>
+
+                <dt>CSS</dt>
+                <dd>CSS is the acronym of “Cascading Style Sheets”. CSS is the language used to style an HTML document. CSS describes how HTML elements should be displayed.</dd>
+
+                <dt>PHP</dt>
+                <dd>PHP is an acronym for "PHP: Hypertext Preprocessor". PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.</dd>
+            </dl>
+        </div>
+    </div>
+</body>
+</html>
