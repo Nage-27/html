@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=a, initial-scale=1.0">
+    <title>Pseudo Class & Element</title>
+    <style>
+        a:hover {
+            color: red;
+        }
+        p::first-letter {
+            font-size: 24px;
+            color: blue;
+        }
+
+        div {
+            transition: background-color 1s;
+        }
+        div:hover {
+            background-color: yellow;
+            transform: translateX(0);
+        }
+        @keyframes slide {
+            from { left: 0; }
+            to { right: 200px; }
+        }
+
+        .kotak {
+            width: 200px;
+            height: 200px;
+            background-color: bisque;
+            animation-name: slide;
+            animation-duration: 5s;
+            animation-iteration-count: 2;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="" class="unvisited">Ini Teks Link</a>
+    <p>Ini Paragraf</p>
+    <div class="kotak">Kotak</div>
+</body>
+</html>

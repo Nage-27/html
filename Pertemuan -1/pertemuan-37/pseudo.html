@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div:hover {
+            color: orange;
+        }
+
+        input:focus {
+            background-color: antiquewhite;
+            color: aquamarine;
+        }
+
+        p {
+            display: none;
+            background-color: aqua;
+            color: black;
+            padding: 20px;
+        }
+
+        div.p:hover p {
+            display: block;
+        }
+
+        .parent:first-child {
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <!-- Psuedo Link -->
+     <a href="" class="unvisited">unvisited</a>
+
+     <!-- Pseudo visited -->
+      <a href="" class="visited">visited</a>
+
+     <!-- Pseudo Div -->
+      <div>div:hover</div>
+
+      <!-- input -->
+       <input type="text" placeholder="ini focus">
+
+       <div class="p">Hover to show <p>Tada I Am Here</p></div>
+
+       <div class="parent">
+         <div class="1st-child">Anak1</div>
+         <div class="2nd-child">Anak2</div>
+         <div class="3rd-child">Anak3</div>
+       </div>
+</body>
+</html>

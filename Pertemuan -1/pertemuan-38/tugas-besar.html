@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Besar - Poster Digital Aesthetic</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container-poster {
+            width: 400px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            border-radius: 10px;
+            animation: slideUp 1s ease-out forwards;
+            transform: translateY(100%);
+        }
+
+        h1 {
+            transition: 0.5s;
+            animation: slideUp 1s ease-out forwards;
+            transform: translateY(100%);
+        }
+
+        h1:hover {
+            color: gray;
+        }
+
+        @keyframes slideUp {
+            0% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        img {
+            max-width: 50%;
+            height: auto;
+            margin: 1em 0;
+            border-radius: 5px;
+            transition: 0.5s;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        .tombol {
+            display: inline-block;
+            background-color: gray;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1em;
+            font-weight: bold;
+            transition: 0.5s;
+        }
+
+        .tombol:hover {
+            transform:scale(1.2)   
+        }
+    </style>
+</head>
+<body>
+    <div class="container-poster">
+        <h1 style="">Motivasi Hidup Saya.</h1>
+        <h4 class="subtitle">Hidup itu perlu motivasi, Biar gak terdistraksi</h4>
+        <img src="Senja di Cafe.jpg" alt="gambar cafe bandung">
+        <blockquote>"Tetap Semangat walau tidak punya penyemangat, tetap berjuang meski tidak punya ayang,
+            Utamakan Cita - Cita Baru Cinta - Cinta".
+        </blockquote>
+        <div class="tombol-sosial">
+            <a href="#" class="t-net"><img src="heart.png" width="25"></a>
+            <a href="#" class="t-net"><img src="send.png" width="25"></a>
+        </div>
+    </div>
+</body>
+</html>
