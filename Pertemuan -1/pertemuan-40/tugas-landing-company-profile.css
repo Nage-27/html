@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(#2C9BF3,#FFFFFF) repeat-x;
+    font-family: sans-serif;
+}
+
+/* Navigasi */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.menu-nav {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-nav ul {
+    list-style: none;
+    gap: 25px;
+    display: flex;
+}
+
+.tombol-nav {
+    text-decoration: none;
+    background: linear-gradient(#2C9BF3,#FFFFFF);
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+/* Hero */
+

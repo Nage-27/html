@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #f9fafb;
+  color: #111;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 60px;
+  background: #fff;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  color: #555;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 60px;
+  background: linear-gradient(135deg, #eef2ff, #ffffff);
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text span {
+  color: #6366f1;
+}
+
+.hero-text h2 {
+  font-size: 36px;
+}
+
+.hero-text h3 {
+  font-size: 22px;
+  margin: 10px 0;
+  color: #555;
+}
+
+.hero-text p {
+  margin-top: 15px;
+  line-height: 1.6;
+}
+
+.hero button {
+  margin-top: 25px;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 25px;
+  background: #6366f1;
+  color: #fff;
+  cursor: pointer;
+}
+
+.hero-image {
+  width: 320px;
+  height: 320px;
+  background: #c7d2fe;
+  border-radius: 30px;
+}
+
+/* ABOUT */
+.about {
+  padding: 80px 60px;
+  background: #fff;
+  text-align: center;
+}
+
+/* EXPERIENCE */
+.experience {
+  padding: 80px 60px;
+}
+
+.exp-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.exp-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* WORKS */
+.works {
+  padding: 80px 60px;
+  background: #fff;
+}
+
+.work-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.work-card {
+  height: 180px;
+  background: #e0e7ff;
+  border-radius: 20px;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 25px;
+  background: #111;
+  color: #fff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    margin-top: 40px;
+  }
+
+  .exp-cards,
+  .work-list {
+    grid-template-columns: 1fr;
+  }
+}
