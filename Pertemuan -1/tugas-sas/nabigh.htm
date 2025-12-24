@@ -17,25 +17,31 @@
             color: #6366f1; 
         }
 
+        h2:hover {
+            transform: scale(1.1);
+        }
+
+        button:hover {
+            transform: scale(1.2);
+        }
+
        @keyframes slideUp { 0% { transform: translateY(100%); opacity: 0;} 100% { transform: translateY(0); opacity: 1;}}
     </style>
 </head>
 <body>
-    <img src="https://picsum.photos/id/29/600/700" alt="" style="height: 100rem ;">
-    <section class="sec-1" style="display: flex; justify-content: center; padding: 30px; border-radius: 15px; box-shadow: 0 4px 20px #d5dff0">
+    <img src="https://picsum.photos/id/29/600/700" alt="" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: -1;">
+     <section class="sec-1" style="margin-top: 100px; display: flex; justify-content: center; padding: 30px; border-radius: 15px; box-shadow: 0 4px 20px #d5dff0">
         <!-- Buat Gambar -->
         <section>
         <img src="https://picsum.photos/id/1/200/300" alt="Gambar Kalcer" style="width: 300px; height: 300px; border-radius: 300px;">
     </section>
     <!-- Buat Cardnya -->
-    <section style="margin-top: 30px; margin-left: 40px;">
+    <section style="margin-bottom: 10px;">
         <h1 style="font-family: sans-serif;">Hi, I'am <span style="transition: 0.5s;">Nabigh Habibie Ghany</span></h1>
-        <h2 style="font-family: sans-serif; font-weight: 100; color: #555;">Web Developer & Designer</h2>
+        <h2 style="font-family: sans-serif; font-weight: 100; color: #555; transition: 0.5s;">Web Developer & Designer</h2>
         <p style="font-family: sans-serif; color: #555;">Passionate about creating intultive and dynamic user experiences.</p>
-        <button style="transition: 0.5s; font-family: sans-serif; font-weight: 500; border: none; border-radius: 5px; background-color: #4747f8; color: aliceblue; padding: 8px;">Explore Now</button>
+        <button style="transition: 0.5s; font-family: sans-serif; font-weight: 500; border: none; border-radius: 5px; background-color: #4747f8; color: aliceblue; padding: 8px; transition: 0.5s;">Explore Now</button>
     </section>
     </section>
-    
-    
 </body>
 </html>
