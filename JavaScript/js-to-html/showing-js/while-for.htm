@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While FOr</title>
+</head>
+<body>
+    <script>
+         // For dan While Loop
+        // Perulangan For
+
+        // For Loop
+        for (let i = 0; i < 5; i++) {
+            document.write(`Angka ${i}<br>`);
+        }
+
+        // For in
+      const person = {
+        name: "John",
+        origin: "USA",
+        city: "New York"
+      };
+
+        for (let key in person) {
+            document.write(`${key}: ${person[key]}<br>`);
+        }
+
+        //For of 
+
+        const names = ["Alice", "Bob", "Charlie"];
+
+        for (let name of names) {
+            document.write(`${name}<br>`);
+        }
+
+        // perulangan while
+        // While Loop atau statement
+
+        // let x = 0;
+
+        // while (x < 5) {
+        //     console.log(`Nilai ${x}<br>`);
+        //     x++;
+        // }
+
+        // let y = 0;
+
+        // do {
+        //     console.log(`Angka ${y}`);
+        //     y++;
+        // } while (y < 5);
+
+        let z = 0;
+        for (; z < 5; z++) {
+            console.log(`Nilai z: Angka ${z}`);
+        }
+
+        //Break Satetment
+        for (let i = 0; i < 10; i++) {
+            if (i === 5) {
+                break;
+            }
+            console.log(`Nilai i: Angka ${i}`);
+        }
+
+        //continue Satetment
+        for (let j = 0; j < 10; j++) {
+            if (j % 2 === 0) {
+                continue;
+            }
+            console.log(`Nilai j: Angka ${j}`);
+        }
+
+        
+    </script>
+</body>
+</html>

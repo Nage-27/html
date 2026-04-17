@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Switch Tatement
+        const fruit = 'banana';
+
+        switch (fruit) {
+        case 'banana':
+            console.log('I am a banana.');
+            break;
+
+        case 'apple':
+            console.log('I am an apple.');
+            break;
+
+        case 'orange':
+            console.log('I am an orange.');
+            break;
+
+        case 'strawberry':
+            console.log('I am a strawberry.');
+            break;
+
+        default:
+            console.log('I am not a fruit. I am a programmer.');
+        }
+
+        //Perbandingan Dgn IF ELSE Statement untuk menentukan hari ini
+        //switch satetment untuk menentukan hari
+        const day = new Date().getDay();
+
+        if (day === 0) {
+        console.log('Minggu');
+        } else if (day === 1) {
+        console.log('Senin');
+        } else if (day === 2) {
+        console.log('Selasa');
+        } else if (day === 3) {
+        console.log('Rabu');
+        } else if (day === 4) {
+        console.log('Kamis');
+        } else if (day === 5) {
+        console.log('Jumat');
+        } else if (day === 6) {
+        console.log('Sabtu');
+        } else {
+        console.log('Hari tidak valid');
+        }
+
+        
+        // const day = new Date().getDay();
+
+        switch (day) {
+        case 0:
+            console.log('Minggu');
+            break;
+
+        case 1:
+            console.log('Senin');
+            break;
+
+        case 2:
+            console.log('Selasa');
+            break;
+
+        case 3:
+            console.log('Rabu');
+            break;
+
+        case 4:
+            console.log('Kamis');
+            break;
+
+        case 5:
+            console.log('Jumat');
+            break;
+
+        case 6:
+            console.log('Sabtu');
+            break;
+
+        default:
+            console.log('Hari tidak valid');
+        }
+
+
+         //Pengelompokan data dgn pernyataan switch
+         let buah = 'grape';
+         let sayur = 'carrot'
+        
+         switch (sayur) {
+            //case utk buah
+            case 'grape':
+            case 'apple':
+                console.log("Ini buah");
+                break;
+                //case utk sayur    
+            case 'carrot':
+            case 'cucumber':
+                console.log("Ini sayur");
+                break;
+            default:
+                console.log("Ini Bukan buah & sayur");
+                break;
+         }
+
+         //type data berpengaruh
+         let value = "10";
+
+         switch (value) {
+            case "10":
+                console.log("Ini string 10");
+                break;
+            case 10 :
+                console.log("Ini Angka 10")
+         }
+
+          //Pengelompokan data dgn pernyataan switch
+         const  vegetable = 'carrot';
+        
+         switch (vegetable) {
+            //case utk buah
+            case 'grape':
+            case 'apple':
+                console.log("Ini buah");
+                break;
+                //case utk sayur    
+            case 'carrot':
+            case 'cucumber':
+                console.log("Ini sayur");
+                break;
+            default:
+                console.log("Ini Bukan buah & sayur");
+                break;
+         }
+
+         const nilai = 10;
+         switch (value) {
+            case 10:
+                console.log("Ini angka 10");
+                break;
+            case '10':
+                console.log("Ini String 10");
+                break;
+
+            default:
+                break;
+         }
+         
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jika Kau Bertemu</title>
+</head>
+<body>
+    <script>
+        //If State
+        let nilai = 75;
+        let kkm = 70
+
+        if (nilai >=kkm) {
+            console.log("Selamat, Kamu Lulus!");
+        } else {
+            console.log("Maaf, Kamu Belum Lulus, Coba lagi nanti");
+        }
+
+        //Cek Kedewasaan Leawt Umur 
+        let umur = 18;
+        if (umur >= 18) {
+            console.log("Anda Sudah Dewasa!");
+        } else {
+            console.log("Anda Masih Bocill!");
+        }
+
+        //If Else
+        let score = 100;
+        if (score >=90 && score <= 100) {
+            console.log("Grade A");
+        } else if (score >=80 && score <= 90) {
+            console.log("Grade B");
+        } else if (score >= 70 && score <= 80) {
+            console.log("Grade C");
+        } else if (score =>60 && score <= 70) {
+            console.log("Grade D");
+        }
+
+        //Konversi Boolean
+        let nama = "Gak Tau dh";
+        if (nama) {
+            console.log("Nama Ada: " + nama);
+        } else {
+            console.log("Nama Belum Diisi");
+        }
+
+        //Ternary Operator
+        let usiaOrang = 15;
+        let status = (usiaOrang >= 18) ? "Dewasa" : "Belum Dewasa";
+        console.log(status);
+
+        //Multiple Tenary Operator dgn nested ternary operator
+        let nilaiUjian = 85;
+        let grade = (nilaiUjian >=90) ? "A" :
+                    (nilaiUjian >=80) ? "B" :
+                    (nilaiUjian >=70) ? "C" :
+                    (nilaiUjian >=60) ? "D" : "E";
+        console.log("Grade Anda: " + grade);
+
+        //Multiple trenary operator kombinasi untuk yang non tradisional
+        let warna = "hijau";
+        console.log(warna === "merah" ? "Stop" : "Lanjut Jalan Ges");
+
+        //
+        
+    </script>
+</body>
+</html>

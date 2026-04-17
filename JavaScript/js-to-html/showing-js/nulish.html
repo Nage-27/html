@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nulish</title>
+</head>
+<body>
+    <script>
+        let usernanme = "Fulanah";
+        let displayName = usernanme ?? "Guest";
+
+        console.log(displayName);
+
+        //Operator ||
+        let username = "fulanah";
+        let defaultname2 = username || "Guesat";
+        console.log(defaultname2); //Mengembaliin Fulanah
+        
+        //operator Prioritas
+        let a = "fulan";
+
+        let result = a || (undefined ?? "Default");
+        let result2 = a || ("Default");
+        let lastResult = a;
+        
+        console.log(result);
+        console.log(result2);
+        console.log(lastResult);
+
+        //Pakai Operator Nulish Coalescing ?? Dan Operator Logic AND && Atau OR ||
+        let userInput = null;
+        let isLoggedIn = true;
+
+        let finalResult = (isLoggedIn && userInput) ?? "Default Guest";
+        let finalResult2 = false ?? "Default Guest";
+        console.log(finalResult);
+
+        //Latihan
+        let isLogginIn = true;
+        let status = isLogginIn && "Active";
+        console.log(status);
+
+        let q = false;
+        let e = q ?? "Defolt";
+        console.log(e);
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 32</title>
+</head>
+<body>
+    <script>
+        //Nama Pengguna
+        let userNama = undefined;
+        let nickNama = " Fulan Hyahahaha";
+        const displayName = userNama || nickNama || "Anonymous";
+
+        console.log("Username" + userNama);
+        console.log("Nickname" + nickNama);
+        console.log("Nama Yang Dilihatkan" + displayName);
+
+        //Status Login Pengguna
+        let isLoggedIn = "Ipul";
+        let statusUser = (isLoggedIn) ? "User" : "Guest";
+        console.log(statusUser);
+
+        //Harga Barang 
+        let price1 = 5000;
+        let price2 = null;
+        let price3 = undefined;
+        let price4 = 0;
+
+        function tampilkanHarga(price) {
+            let finalPrice = price ?? 100;
+            console.log(`Harga Barang: ${finalPrice}`);
+        }
+
+        console.log(tampilkanHarga(price1));
+        console.log(tampilkanHarga(price2));
+        console.log(tampilkanHarga(price3));
+        console.log(tampilkanHarga(price4));
+
+    </script>
+</body>
+</html>

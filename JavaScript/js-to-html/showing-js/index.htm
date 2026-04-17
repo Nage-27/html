@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memunculkan Jawascripttt</title>
+</head>
+<body>
+    <!-- <script>
+        document.write("Halo, ini hasil dari javascript doc.write")
+    </script> -->
+    <h1 id="Judul">Judul Lama</h1>
+    <button onclick="ubahJudul()">Klik Untuk Ubah Judul</button>
+
+    <script>
+//         const age = 10;
+//         const name = 'Yapet';
+
+//         console.log(
+//             `Aku ${name}, umurku ${age} tahun.`
+//         );
+// // membuat var
+//         let nama = "Opet";
+//         const tahunLahir = 2005;
+
+//         // Pake var
+
+//         let usia = 2026 - tahunLahir;
+//         console.log("Nama Saya adalah" + nama);
+//         console.log("saya berusia" + usia + "tahun");
+
+//         // String
+//         const name = "Yang Tau aj";
+//         const name1 = 'Yang Tau aj';
+//         const name2 = `Yang Tau aj`;
+
+//         // String dgn membuat grs baru
+
+//         const nameSpace = `Jontil Ndoro`;
+//         // String dng backtick & garis baru
+//         const nameSpace1 = "Jontil\nNdoro";
+//         const nameSpace2 = 'JOntil\nNdoro';
+
+const currentYear = new Date().getFullYear();
+const text = `Sekarang tahun ${currentYear}`;
+const text1 = 'Sekarang tahun' + currentYear;
+const text2 = "Sekarang tahun" + currentYear;
+
+console.log(text);
+console.log(text1);
+console.log(text2);
+
+// Number
+
+function luasLingkaran(jariJari1, jariJari2) {
+    return 3.14 * jariJari1 * jariJari2;
+}
+
+const result = luasLingkaran(50, 40);
+console.log(result);
+
+// Boolean
+const isGreater = 10 > 50;
+console.log(`Is 10 greater than 507 ${isGreater}`); //Is 10 greater than 507 false
+
+// Undifined Null
+
+let undifinedVar;
+console.log(`Value of undifinedVar: ${undifinedVar}`);
+
+let nullVar = null;
+console.log(`Value of nullVar: ${nullVar}`);
+
+//Menampilkan Hasil Null dan Undifined di Halaman HTML
+
+const name1 = {
+firstName: "Ujang",
+lastName: null
+
+};
+const name2 = { firstName: "Pirdaus", lastName: undefined};
+
+console.log(JSON.stringify(name1));
+console.log(JSON.stringify(name2));
+
+//Menampilkan Object Di laman HTML
+let person = {
+    firstName: "Opet",
+    lastName: "Bin Kasep",
+    age: 23,
+    study: "Indonesian University",
+
+};
+
+console.log('Dia person', person);
+
+//Menampilkan Array di laman HTML
+
+let orangs = [
+    { name: "Boncu", age:"32"},
+    { name: "Kusir", age:"90"},
+    { name: "Bonang", age:"70"},
+    { name: "Kutilang", age:"59"}
+]
+
+console.log('Data ke 1', orangs[3]);
+
+// Implementasi Infinity & -Infinity
+const positiveInvinity = 1 / 0;
+const negativeInvinity = -1 / 0;
+
+console.log('positiveInfinity:', positiveInvinity);
+console.log('negativeInfinity:', negativeInvinity);
+
+//Implementasi NaN
+let notANumber = 0 / 0;
+console.log('Not A Number (NaN):', notANumber);
+
+let hasil = 5 * "abc";
+console.log('Not A Number (NaN):', hasil);
+
+//objek angka
+
+// let angka = 123.456;
+
+//method js to exponensial
+let angka1 = 1000;
+let hasil1 = angka1.toExponential(2);
+
+console.log(hasil1);
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 33</title>
+</head>
+<body>
+    <script>
+        //No. 1 Menu Restoran Cepat Saji
+        let pilihan = 1; //Bisa Ganti Angka/Menu Sesuai Selera
+        switch (pilihan) {
+            case 1:
+            console.log("Ayam Goreng");
+                break;
+            case 2:
+                console.log("Burger");
+                break;
+            case 3:
+                console.log("Kentang Goreng");
+                break;
+            case 4:
+                console.log("Minuman");
+                break;
+                default:
+                console.log("Menu")
+        }
+        //No. 2 Mapel
+        let kode = 3; // Bisa Ganti Jurusan
+        switch (kode) {
+            case 1:
+                console.log("MTK");
+                break;
+            case 2:
+                console.log("Fisika");
+                break;
+            case 3:
+                console.log("Biologi");
+                break;
+            case 4:
+                console.log("Kimia");
+                break;
+                default:
+                console.log("Mata Pelajaran Tidak Valid");
+        }
+
+        //No. 3 Diskon Toko Baju
+        let totalBelanja = 250000;
+        let kategori;
+
+        if (totalBelanja < 100000) {
+            kategori = 1;
+        } else if (totalBelanja <= 299999) {
+            kategori = 2;
+        } else {
+            kategori = 3;
+        }
+
+        switch (kategori) {
+            case 1: 
+                console.log("Gak Ada Diskon!");
+                console.log("Total Bayar: Rp" + totalBelanja);
+                break;
+
+            case 2:
+                let diskon10 = totalBelanja * 0.10;
+                console.log("Diskon 10%");
+                console.log("Total bayar: Rp" + (totalBelanja - diskon10));
+                break;
+
+            case 3:
+                let diskon20 = totalBelanja * 0.20;
+                console.log("Diskon 20%");
+                console.log("Total bayar: Rp" + (totalBelanja - diskon20));
+                break;
+        }
+
+        //No. 4 Jadwal Kerja
+        let hari = "Minggu"; //Besok Libur
+
+        switch (hari) {
+            case "Senin":
+            case "Selasa":
+            case "Rabu":
+            case "Kamis":
+            case "Jumat":
+                console.log("09.00 - 17.00");
+                break;
+
+            case "Sabtu":
+                console.log("09.00 - 13.00");
+                break;
+
+            case "Minggu":
+                console.log("Libur Deh...");
+                break;
+
+                default:
+                console.log("Harinya Gak Valid");
+        }
+
+        //No. 5 Persimpangan Lampu Merah
+        let warna = "Merah"; //Bisa diganti sesuai mood
+
+        switch (warna) {
+            case "Merah":
+                console.log("Awwwaaasss... Settoppp!");
+                break;
+
+            case "Kuning":
+                console.log("Iiizzziiiinnn... Mau Meluncur Nihh..");
+                break;
+
+            case "Hijau":
+                console.log("Meluncurr~");
+                break;
+
+                default:
+                    console.log("Warna Terlalu Asing Untuk Dikenal");
+        }
+    </script>
+</body>
+</html>

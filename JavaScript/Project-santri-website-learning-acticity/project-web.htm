@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Kegiatan Sosial Santri</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #fefcf5;
+            color: #1e2a2e;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+        }
+
+        /* Warna utama: hijau zaitun lembut & krem, aksen emas */
+        :root {
+            --primary: #2f5d3a;
+            --primary-dark: #1f3d28;
+            --secondary: #e8b86b;
+            --light-bg: #fffaf2;
+            --card-bg: #ffffff;
+            --text-dark: #1e2a2e;
+            --text-soft: #4a5b5e;
+            --border-light: #e9e1d0;
+        }
+
+        /* Container & Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 32px;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: rgba(255, 250, 242, 0.96);
+            backdrop-filter: blur(10px);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .nav-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+        }
+
+        .logo p {
+            font-size: 0.8rem;
+            color: var(--secondary);
+            font-weight: 500;
+            margin-top: 4px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            font-weight: 500;
+            color: var(--text-dark);
+            transition: 0.2s;
+            font-size: 1rem;
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 80px 0 60px;
+            background: linear-gradient(135deg, #fefae8 0%, #fffaf2 100%);
+        }
+
+        .hero-grid {
+            display: flex;
+            align-items: center;
+            gap: 48px;
+            flex-wrap: wrap;
+        }
+
+        .hero-content {
+            flex: 1;
+        }
+
+        .hero-content h1 {
+            font-size: 3.2rem;
+            font-weight: 800;
+            line-height: 1.2;
+            color: var(--primary-dark);
+            margin-bottom: 24px;
+        }
+
+        .hero-highlight {
+            color: var(--secondary);
+            border-bottom: 3px solid var(--secondary);
+            display: inline-block;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            color: var(--text-soft);
+            margin-bottom: 32px;
+            max-width: 90%;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 14px 36px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+
+        .btn:hover {
+            background-color: var(--secondary);
+            color: #1e2a2e;
+            transform: scale(1.02);
+            box-shadow: 0 12px 20px rgba(232, 184, 107, 0.3);
+        }
+
+        .hero-image {
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.4s;
+        }
+
+        .hero-image:hover img {
+            transform: scale(1.02);
+        }
+
+        /* Section umum */
+        section {
+            padding: 70px 0;
+        }
+
+        .section-title {
+            font-size: 2.3rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        .section-sub {
+            text-align: center;
+            color: var(--text-soft);
+            max-width: 700px;
+            margin: 0 auto 48px;
+            font-size: 1.1rem;
+        }
+
+        /* Tentang section */
+        .about-card {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 32px;
+            box-shadow: 0 15px 30px -12px rgba(0,0,0,0.05);
+            border: 1px solid var(--border-light);
+        }
+
+        .about-card p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            color: var(--text-soft);
+        }
+
+        /* Kegiatan - Card Grid */
+        .kegiatan-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px;
+            justify-content: center;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 28px;
+            overflow: hidden;
+            width: 300px;
+            transition: all 0.3s;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.02);
+            border: 1px solid var(--border-light);
+        }
+
+        .card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 25px 40px -12px rgba(47, 93, 58, 0.2);
+            border-color: var(--secondary);
+        }
+
+        .card-img {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .card-content {
+            padding: 24px 20px 28px;
+        }
+
+        .card-content h3 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 12px;
+        }
+
+        .card-content p {
+            color: var(--text-soft);
+            margin-bottom: 16px;
+            line-height: 1.5;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #f0ede5;
+            padding: 6px 12px;
+            border-radius: 40px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1e2a2e;
+            color: #d4cfc1;
+            padding: 48px 0 24px;
+            margin-top: 40px;
+        }
+
+        .footer-flex {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 32px;
+        }
+
+        .footer-col h4 {
+            color: var(--secondary);
+            margin-bottom: 16px;
+            font-size: 1.2rem;
+        }
+
+        .footer-col p, .footer-col a {
+            color: #cbd5c3;
+            text-decoration: none;
+            line-height: 1.7;
+        }
+
+        .footer-col a:hover {
+            color: var(--secondary);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 28px;
+            border-top: 1px solid #3a4a3f;
+            font-size: 0.85rem;
+        }
+
+        /* @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+            }
+            .hero-content h1 {
+                font-size: 2.3rem;
+            }
+            .nav-flex {
+                flex-direction: column;
+                gap: 16px;
+            }
+            .nav-links {
+                gap: 1.2rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .hero-grid {
+                flex-direction: column;
+            }
+            .section-title {
+                font-size: 1.8rem;
+            }
+        } */
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+    <div class="container nav-flex">
+        <div class="logo">
+            <h2>Pesantren Bujar</h2>
+            <p>Hafizh Qur'an Mahir IT · Sosial Masyarakat </p>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#kegiatan">Kegiatan</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </div>
+    </nav>
+
+    <!-- Hero -->
+
+    <section class="hero">
+    <div class="container hero-grid">
+        <div class="hero-content">
+            <h1>Membangun Generasi <span class="hero-highlight">Hafizh Qur'an</span> Mahir IT</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, at distinctio optio aspernatur laboriosam aperiam.</p>
+            <a href="#" class="btn" onclick="alert('Selamat Bergabung Di Web Kami')">Gabung Sekarang →</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1582653291997-079a1b04e6d1?w=600&auto=format" alt="">
+        </div>
+    </div>
+    </section>
+
+    <!-- About -->
+    <section id="tentang">
+    <div class="container">
+        <div class="about-card">
+            <h2 class="section-title" style="text-align: left;">Tentang Program Kami</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur consequatur tenetur, nesciunt, corrupti a dolorem, qui nihil quibusdam ipsum incidunt perspiciatis? Labore nesciunt odio quia provident, quam quasi rem autem!</p>
+        </div>
+    </div>
+    </section>
+
+    <!-- Testimoni -->
+
+    <section id="kegiatan">
+    <div class="container">
+        <h2 class="section-title">Program Sosial Santri</h2>
+        <p class="section-sub">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <div class="kegiatan-grid">
+
+    <!-- Testimoni Kegiatan 1 -->
+
+    <div class="card">
+    <div class="card-img">imf</div>
+        <div class="card-content">
+        <h3>Halaqoh Qur'an</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur impedit harum hic officia veritatis beatae.</p>
+        <span class="badge">Menjadi Hafizh</span>
+        </div>
+    </div>
+
+    <!-- Testimoni Kegiatan 2 -->
+
+    <div class="card">
+        <div class="card-img"><img src="gambar/onur-binay-auf3GwpVaOM-unsplash.jpg" alt=""></div>
+        <div class="card-content">
+        <h3>Kelas IT</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta delectus magni fugit dolores ab nobis.</p>
+        <span class="badge">Biar Gak Gaptek</span>
+        </div>
+    </div>
+
+    <!-- Testimoni Kegiatan 3 -->
+
+    <div class="card">
+        <div class="card-img"><img src="gambar/2FsjlyH.jpg" alt=""></div>
+        <div class="card-content">
+            <h3>Ekstrakulikuler </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur enim dolores sint perferendis nam magni.</p>
+            <span class="badge">Biar Ga Nolep</span>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- 6. Footer + copyright & nama pembuat -->
+<footer id="kontak">
+    <div class="container">
+        <div class="footer-flex">
+            <div class="footer-col">
+                <h4>Pesantren Bujar</h4>
+                <p>Menebar manfaat, mengukir prestasi.</p>
+                <p>+62 812 3456 7890</p>
+                <p>abudzar.sch.id</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigasi</h4>
+                <p><a href="#">Beranda</a></p>
+                <p><a href="#tentang">Tentang</a></p>
+                <p><a href="#kegiatan">Kegiatan Sosial</a></p>
+                <p><a href="#">Kontak Kami</a></p>
+            </div>
+            <div class="footer-col">
+                <h4>Program Unggulan</h4>
+                <p>▪️ Tahfidz</p>
+                <p>▪️ Pro Player IT</p>
+                <p>▪️ Harus Adil</p>
+                <p>▪️ Kajian Ilmiah</p>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2026 • Program Kegiatan Santri` • Dibuat Langsung Sama <strong>Nabigh</strong> | Dah
+        </div>
+    </div>
+</footer>
+</body>
+</html>

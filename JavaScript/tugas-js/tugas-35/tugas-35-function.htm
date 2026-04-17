@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 35</title>
+</head>
+<body>
+    <script>
+        //No. 1
+        function greeting(Yono) {
+            if (!Yono) {
+                return "Halo, Tamuu!";
+            }
+            return "Halo, " +   Yono + "!";
+        }
+
+        console.log(greeting("Yono"));
+        console.log(greeting());
+
+        //No. 2
+        function cekMedali (skor) {
+            if (skor >= 90) {
+                console.log("Selamat! Kamu mendapat Medali Emas!");
+            } else if (skor >= 75) {
+                console.log("Hebat! Kamu mendapat Medali Perak!");
+            } else if (skor >= 60) {
+                console.log("Bolehlah! Kamu mendapat Medali Perunggu!");
+            } else {
+                console.log("Mohon Maaf, Kamu belum bisa mendapat Medali.");
+            }
+        }
+
+        cekMedali(95);
+        cekMedali(82);
+        cekMedali(65);
+        cekMedali(50);
+
+        //No. 3
+        function cekKelulusan(nilai) {
+            if (nilai >= 75) {
+                console.log("Selamat, Kamu Lulus!");
+            } else {
+                console.log("Maaf, Kamu Tidak Lulus.");
+            }
+        }
+
+        console.log("Nilai 80:");
+        cekKelulusan(80);
+
+        console.log("Nilai 70:");
+        cekKelulusan(70);
+
+        console.log("Nilai 75:");
+        cekKelulusan(75);
+
+        //No.4
+        function biayaParkir(lamanyaParkir) {
+            const tarifAwal = 3000;
+            const tarifBeliLagi = 2000;
+
+            if (lamanyaParkir <= 2) {
+                return tarifAwal;
+            }   else {
+                return tarifAwal + (lamanyaParkir - 2) * tarifBeliLagi;
+            }
+        }
+
+        console.log(biayaParkir(1));
+        console.log(biayaParkir(2));
+        console.log(biayaParkir(5));
+    </script>
+</body>
+</html>
